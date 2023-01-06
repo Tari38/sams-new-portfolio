@@ -25,7 +25,7 @@ class Contact extends Component {
             message: this.state.message
         }
         
-        axios.post('API_URI', data)
+        axios.post('/', data)
         .then( res => {
             this.setState({ sent: true }, this.resetForm())
         })
