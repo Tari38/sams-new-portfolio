@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+  text-align: center;
+  transition: .5s all ease-in-out;
+  width: 100vw;
+}
+

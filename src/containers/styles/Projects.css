@@ -1,0 +1,118 @@
+.section-projects {    
+    display: flex;
+    flex-direction: column;
+    
+    /* background-color: #ebecec; */
+    background-image: linear-gradient(to right, #ffffff, #f8f9ff, #edf4ff, #dff0ff, #ceecfd, #cbeafa, #c7e8f7, #c4e6f4, #cde5f1, #d6e4ee, #dde4ea, #e3e4e5);
+    height: auto;
+    justify-content: space-between;
+    
+}
+
+.projects, .creations, .contributed {
+    color: rgb(25, 213, 238);
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+.github-project-link {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: solid #fff 2px;
+    height: 60px;
+    width: 60px;
+    visibility: hidden;    
+    transition: all 0.5s ease;
+    background-image: url("../../assets/icons/github.png");
+    background-size: contain;
+    background-color: #fff;
+}
+
+
+.card {
+    background-color: inherit;
+    border: none;
+    max-width: 18rem;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+
+.card-img:hover {
+    transform: scale(1.02);
+    transition: all 0.5s ease;    
+}
+
+.card-img:hover+.github-project-link {
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+.github-project-link:hover {
+    visibility: visible;
+    background-image: url("../../assets/icons/github.png");
+    background-size: contain;
+    background-color: #61dafb;
+    border: solid #fff 2px;
+}
+
+.project-img {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    height: fit-content;
+    width: 18rem;
+    transition: all 0.5s ease;
+}
+
+.card-body {
+    /* background-color: rgb(10, 116, 165); */
+    background-image: linear-gradient(to left top, #0a74a5, #25658f, #2d5779, #304964, #2e3c4f, #2e3c4f, #2e3c4f, #2e3c4f, #304964, #2d5779, #25658f, #0a74a5);
+    width: 18rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    /* background-color: #f7a529; */
+    width: 18rem;
+    border-radius: 0 0 20px 20px;
+    margin-left: -16px;
+    padding: 10px;
+    color: #fff;
+}
+
+.project-text {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.project-btn {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #61dafb;
+}
+
+.project-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 280px ) {
+    .col {
+        margin: auto;
+        width: 100%;
+    }
+    .card .card-img .card-body .card-text {
+        width: 100%;
+        padding: 5px;
+        margin: auto;
+        font-size: 16px;
+    }
+    .card:hover {
+        transform: none;
+    }
+    
+}

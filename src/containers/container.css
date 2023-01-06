@@ -1,0 +1,78 @@
+.section-about {
+    width: 100vw;
+    padding: 15px;
+    background-image: linear-gradient(to right top, #5bc5e3, #4cb6d8, #3da6cc, #2f97c1, #2088b5, #198cb9, #0f91bc, #0095c0, #00aed1, #0fc8df, #39e2ea, #5ffbf1);
+}
+
+.passion, .design, .code {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+.col {
+    width: 100vw;
+}
+
+.card {
+    background-color: inherit;
+    border: none;
+    max-width: 18rem;
+    margin: 5px;
+    /* padding: 10px; */
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: rotateZ(10deg);
+    transition: all 0.5s ease;
+}
+
+.card-img {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+    width: 18rem;
+}
+
+.card-body {
+    /* background-color: rgb(10, 116, 165); */
+    background-image: linear-gradient(to left top, #0a74a5, #25658f, #2d5779, #304964, #2e3c4f, #2e3c4f, #2e3c4f, #2e3c4f, #304964, #2d5779, #25658f, #0a74a5);
+    width: 18rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    /* background-color: #f7a529; */
+    width: 18rem;
+    border-radius: 0 0 20px 20px;
+    margin-left: -16px;
+    padding: 10px;
+    color: #fff;
+}
+
+.card-text {
+    font-size: 18px;
+    text-align: justify;
+    color: #fff;
+}
+
+@media only screen and (max-width: 425px ) {
+    .col {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-about .card .card-img .card-body .card-text {
+        width: 100vw;
+        padding: 5px;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .card:hover {
+        transform: none;
+    }
+    
+}

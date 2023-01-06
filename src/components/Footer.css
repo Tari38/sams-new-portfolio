@@ -1,0 +1,7 @@
+.footer-container {
+    background-image: linear-gradient(to right, #ffffff, #f8f9ff, #edf4ff, #dff0ff, #ceecfd, #cbeafa, #c7e8f7, #c4e6f4, #cde5f1, #d6e4ee, #dde4ea, #e3e4e5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

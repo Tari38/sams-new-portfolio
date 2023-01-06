@@ -1,0 +1,36 @@
+.App-logo {
+    max-height: 15em;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    box-shadow: #61dafb -3px -3px 30px 20px;
+    padding: 3px;
+  }
+  
+  .App-logo:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+  }
+  
+  .App-header {
+    width: 100%;
+    margin-top: 4em;
+    background-image: radial-gradient(circle, #282c34, #3a4858, #49667d, #5486a4, #5ba9ca, #5ba9ca, #5ba9ca, #5ba9ca, #5486a4, #49667d, #3a4858, #282c34);
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+  }
+
+  @media only screen and (max-width: 425px ) {
+    .App-logo {
+      transform: scale(.8);
+    }
+    .App-header {
+        background-color:#282c34;
+        transition: 1s ease;
+    }
+  }
