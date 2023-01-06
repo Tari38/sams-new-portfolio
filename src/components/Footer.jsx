@@ -3,14 +3,7 @@ import "./Footer.css";
 import Contact from "../containers/Contact";
 
 class Footer extends Component {
-    state = {
-        name: '',
-        message: '',
-        email: '',
-        sent: false,
-        buttonText: 'Send Message'
-    }
-
+    
     render() {
         return (
             <div className="footer-container" id="contact">
