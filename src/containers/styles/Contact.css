@@ -16,12 +16,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 70%;
+    margin: auto;
 }
 
 input, textarea {
     border: none;
     border-bottom: 1px solid #a6cadb;
     box-shadow: 2px 2px #a6cadb;
+    margin: 10px 0;
     padding: 10px;
     text-align: center;
 }
@@ -35,7 +38,7 @@ input, textarea {
     margin-top: 10px;
 }
 
-.button {
+.contact-form > button {
     padding: 10px;
     width: 100%;
     border: none;
@@ -47,6 +50,6 @@ input, textarea {
     font-size: 24px;
 }
 
-.button:hover {
+.contact-form > button:hover {
     background-color: #61dafb;
 }
