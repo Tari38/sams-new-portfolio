@@ -121,6 +121,7 @@ export default function Form (){
     <Container>
     <h1><span className="get"> Get</span> in <span className="contact">Contact</span></h1>
     <form 
+      method='POST' 
       className='contact-form' 
       onSubmit={handleSubmit}
       data-netlify="true">
