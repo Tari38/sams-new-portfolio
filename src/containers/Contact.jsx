@@ -112,7 +112,7 @@ export default function Form (){
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contactForm', ...state })
     })
-      .then(() => alert('Success!'))
+      .then(() => alert('Thank you for getting in touch! The message was sent successfully!'))
       .catch(error => alert(error))
     e.preventDefault()
   }
@@ -122,7 +122,10 @@ export default function Form (){
     <h1><span className="get"> Get</span> in <span className="contact">Contact</span></h1>
     <form 
       className='contact-form' 
-      onSubmit={handleSubmit}>
+      onSubmit={handleSubmit}
+      data-netlify="true">
+
+      <input type="hidden" name="form-name" value="contactForm" />
 
       <input 
         type='text' 
