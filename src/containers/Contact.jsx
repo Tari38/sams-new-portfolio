@@ -124,6 +124,7 @@ export default function Form (){
       method='POST' 
       className='contact-form' 
       onSubmit={handleSubmit}
+      data-netlify-recaptcha="true"
       data-netlify="true">
 
       <input type="hidden" name="form-name" value="contactForm" />
@@ -147,6 +148,9 @@ export default function Form (){
         placeholder='Messaage'
         value={state.message}
         onChange={handleChange}></textarea>
+
+      <div data-netlify-recaptcha="true"></div>
+
       <button type='submit'>Submit</button>
     </form>
     </Container>
