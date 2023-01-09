@@ -1,5 +1,5 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import { StoryMashups, RiskyQuizness, HabiTrax, ArtemisCamping, Battleship, NodeChat, Quotes } from "../assets/projects";
+import { StoryMashups, RiskyQuizness, HabiTrax, ArtemisCamping, Battleship, NodeChat, Quotes, NodeContactForm } from "../assets/projects";
 import "./styles/Projects.css";
 
 
@@ -26,17 +26,6 @@ function Projects() {
                                         <div>                        
                                             <Button className="project-btn netlify-link shadow-lg" href="https://fp-story-mashups.netlify.app/index.html" rel="noreferrer" target="_blank">Go to Story Mashups!</Button>                    
                                         </div>     
-                                    
-                                        {/* <Container>
-                                        <PieChart>
-                                            <FullOption 
-                                                data={[
-                                                    { title: 'JavaScript', value: 49.9, color: '#F1E05A' },
-                                                    { title: 'HTML', value: 28.9, color: '#E34C26' },
-                                                    { title: 'CSS', value: 21.2, color: '#563D7C' },
-                                                ]} />
-                                        </PieChart>
-                                        </Container>                        */}
                                 </Card.Body>
                         </Card>
                     </Col>
@@ -126,6 +115,20 @@ function Projects() {
                                 <Card.Body className="card-body">
                                     <Card.Title className="project-title">API Advice Slip</Card.Title>
                                         <Card.Text className="project-text">An advice slip that is randomised via an API. I also incorporated this code into the HabiTrax project.</Card.Text>           
+                                </Card.Body>
+                        </Card>
+
+                    </Col>
+                    <Col className="col mx-auto">
+                        <Card className="card shadow-lg">
+                            <Card.Img src={NodeContactForm} className="project-img" />
+                                
+                            <Button href="https://github.com/Tari38/Node-contact-form" className="github-project-link" target="_blank"></Button>
+                                
+                                                 
+                                <Card.Body className="card-body">
+                                    <Card.Title className="project-title">Node Contact Form</Card.Title>
+                                        <Card.Text className="project-text">A Node API ready to use for a basic contact form.</Card.Text>           
                                 </Card.Body>
                         </Card>
                     </Col>
