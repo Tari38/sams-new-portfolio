@@ -9,7 +9,7 @@ class Footer extends Component {
             <div className="footer-container" id="contact">
                 <Contact />
                 <hr />
-                <p>Samantha Dorrell 2023</p>
+                <p>2023 © Designed and Created by Samantha Dorrell</p>
             </div>
         );
     }

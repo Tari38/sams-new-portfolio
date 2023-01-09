@@ -31,7 +31,7 @@ export default function Form (){
       <textarea 
         aria-label="Enter your message"
         name='message' 
-        placeholder='Your Message'        
+        placeholder='Your message'        
         ></textarea>
 
       <div data-netlify-recaptcha="true"></div>
